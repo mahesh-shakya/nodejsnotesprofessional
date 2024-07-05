@@ -1,3 +1,4 @@
+// file read write operations.
 /**
  * Nodejs core modules:-
  * Node.js has a set of built-in modules which you can use without any further installation.
@@ -35,4 +36,4 @@ Buffer data look like:-
 
  
 
-fs.renameSync("read.txt", "readme.txt");
+// fs.renameSync("read.txt", "readme.txt");
