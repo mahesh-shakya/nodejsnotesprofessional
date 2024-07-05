@@ -33,6 +33,6 @@ Buffer data look like:-
 <Buffer 6d 79 20 66 69 72 73 74 20 74 65 78 74 20 0a 74 68 69 73 20 69 73 20 61 70 70 65 6e 64 20 74 65 78 74 2e>
 */
 
-
+ 
 
 fs.renameSync("read.txt", "readme.txt");
