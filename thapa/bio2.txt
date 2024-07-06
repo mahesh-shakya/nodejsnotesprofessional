@@ -1,0 +1,2 @@
+this is synchronous version
+ this is append text with asynchronous

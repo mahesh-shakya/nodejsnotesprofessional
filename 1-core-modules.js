@@ -56,19 +56,45 @@ Buffer data look like:-
 
 // Another way to read data without getting buffer data
 // Below code doesnot work in synchronous version
-fs.readFile('thapa/bio.txt',  "utf8", function(err, data){
-    if(err) throw err;
-    console.log(data);
-})
+// fs.readFile('thapa/bio.txt',  "utf8", function(err, data){
+//     if(err) throw err;
+//     console.log(data);
+// })
 
 
-fs.renameSync("thapa/bio.txt", "myBio.txt");
+// fs.renameSync("thapa/bio.txt", "myBio.txt");
 //Rename a file
 
 
-fs.unlinkSync('thapa/myBio.txt');
+// fs.unlinkSync('thapa/myBio.txt');
 // To delete a file
 
-fs.rmdirSync('thapa');
+// fs.rmdirSync('thapa');
 // To delete a folder
 
+
+// ASYNCHRONOUS FILE SYSTEM
+// fs.writeFile('thapa/bio2.txt','this is synchronous version', function(err){
+//         if(err) throw err;
+//         console.log('file create with data or file override successfull');
+//     });
+//Above function is callback function.
+
+
+
+
+// fs.appendFile('thapa/bio2.txt','\nthis is append text with asynchronous', function(err){
+//     if(err) throw err;
+//     console.log('Text added successfull in bio2.txt file');
+// })
+// append text to bio2.txt
+
+
+
+
+fs.readFile('thapa/bio.txt',  "utf8", function(err, data){
+    if(err) throw err;
+    console.log(data);
+    console.log('file read successfully!');
+})
+//Reading file data using asynchronous
