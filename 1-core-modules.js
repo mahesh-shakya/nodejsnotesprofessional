@@ -37,3 +37,38 @@ Buffer data look like:-
  
 
 // fs.renameSync("read.txt", "readme.txt");
+// rename a file
+
+// fs.mkdirSync('thapa');
+// create new folder
+
+// fs.writeFileSync("thapa/bio.txt", "created file text");
+// in thapa folder file created with data.
+
+// fs.appendFileSync("thapa/bio.txt","\nthis is append text.");
+// append text in bio.txt
+
+
+// const data = fs.readFileSync('thapa/bio.txt', "utf8" )
+// file read data without getting buffer data
+// console.log(data);
+
+
+// Another way to read data without getting buffer data
+// Below code doesnot work in synchronous version
+fs.readFile('thapa/bio.txt',  "utf8", function(err, data){
+    if(err) throw err;
+    console.log(data);
+})
+
+
+fs.renameSync("thapa/bio.txt", "myBio.txt");
+//Rename a file
+
+
+fs.unlinkSync('thapa/myBio.txt');
+// To delete a file
+
+fs.rmdirSync('thapa');
+// To delete a folder
+
