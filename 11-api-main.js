@@ -4,14 +4,14 @@ const fs = require('fs');
 
 const server = http.createServer((req, res)=>{
    
-    // Reading file
+    // Reading file synchronous
     const data = fs.readFileSync("11.1-user-api.json", "utf-8");
     const objData = JSON.parse(data);   
     // convert JSON to javascript object        
        
 
     if(req.url=="/"){
-        res.end("hello from Homess");
+        res.end("hello from Home");
     }
     else if(req.url=="/about"){    
         res.end("hello from About");
